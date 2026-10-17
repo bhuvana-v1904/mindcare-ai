@@ -1,0 +1,287 @@
+/* SMOOTH SCROLLING */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7fbfa;
+    color: #183b3a;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #16836d;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #183b3a;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #16836d;
+}
+
+/* BUTTONS */
+
+button {
+    border: none;
+    cursor: pointer;
+    background: #16836d;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #106957;
+    transform: translateY(-2px);
+}
+
+/* HOME PAGE HERO */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(135deg, #e6faf4, #e9f3ff);
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 40px 20px;
+}
+
+.sdg-badge {
+    display: inline-block;
+    background: #4c9f38;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #124f46;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #476462;
+    margin-bottom: 30px;
+}
+
+/* GENERAL SECTION */
+
+.section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #607875;
+    margin-bottom: 40px;
+}
+
+/* FEATURE CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.card .icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* CHECK-IN SECTION */
+
+.checkin-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e6faf4, #eef6ff);
+}
+
+.checkin-container {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+.checkin-container h1 {
+    font-size: 42px;
+    color: #124f46;
+    margin-bottom: 10px;
+}
+
+/* MOOD BUTTONS */
+
+.moods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.moods button {
+    width: 120px;
+    height: 110px;
+
+    background: white;
+    color: #183b3a;
+
+    border: 2px solid #d4ebe6;
+
+    font-size: 36px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.moods button span {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.moods button:hover {
+    border-color: #16836d;
+    background: #e5f8f3;
+}
+
+/* MOOD RESPONSE */
+
+.response-box {
+    max-width: 650px;
+
+    margin: 30px auto 0;
+    padding: 22px;
+
+    background: white;
+
+    border-left: 5px solid #16836d;
+    border-radius: 10px;
+
+    text-align: left;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.hidden {
+    display: none;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #102f2b;
+    color: #d7e8e5;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .checkin-container h1 {
+        font-size: 32px;
+    }
+
+    .moods button {
+        width: 100px;
+        height: 100px;
+    }
+}
